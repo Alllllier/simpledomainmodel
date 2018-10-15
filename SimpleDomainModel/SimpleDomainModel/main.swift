@@ -202,7 +202,7 @@ open class Family {
   open func householdIncome() -> Int {
     var total: Int = 0;
     for member in self.members {
-      if let job = member._job {
+      if let job = member.job {
         switch job.type {
         case Job.JobType.Salary(let amt):
           total += amt
